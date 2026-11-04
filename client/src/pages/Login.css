@@ -1,0 +1,256 @@
+.ew-login-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #f6f8f4;
+    color: #203b2e;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.ew-login-left {
+    background: linear-gradient(145deg, #153d2d, #245b42);
+    color: white;
+    padding: 48px 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.ew-login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 25px;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.ew-brand-icon {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 11px;
+    border-radius: 13px;
+    display: flex;
+}
+
+.ew-login-message {
+    max-width: 510px;
+    margin: auto 0;
+    padding: 60px 0;
+}
+
+.ew-small-label {
+    color: #80c99c;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.ew-login-message h1 {
+    font-size: clamp(38px, 4.5vw, 61px);
+    line-height: 1.13;
+    margin: 24px 0;
+    letter-spacing: -2px;
+}
+
+.ew-login-message h1 span {
+    color: #a5d8a8;
+}
+
+.ew-login-message p {
+    color: #d1e2d7;
+    line-height: 1.9;
+    font-size: 15px;
+    max-width: 440px;
+}
+
+.ew-login-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #c0d4c7;
+    font-size: 12px;
+}
+
+.ew-login-right {
+    padding: 35px 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ew-back-home {
+    color: #557263;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.ew-login-card {
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+}
+
+.ew-login-heading h2 {
+    color: #1d382b;
+    font-size: 32px;
+    margin: 15px 0 8px;
+    letter-spacing: -1px;
+}
+
+.ew-login-heading p {
+    color: #75847a;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.ew-role-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.ew-role-selector button {
+    padding: 15px 8px;
+    border: 1px solid #dce6dd;
+    border-radius: 12px;
+    background: white;
+    color: #62756a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ew-role-selector button.active {
+    border: 1px solid #347c54;
+    background: #eaf4ec;
+    color: #245b3b;
+}
+
+.ew-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.ew-login-form label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #344d3d;
+    margin-top: 7px;
+}
+
+.ew-input-wrapper {
+    height: 52px;
+    background: white;
+    border: 1px solid #dce5dd;
+    border-radius: 10px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #829187;
+}
+
+.ew-input-wrapper:focus-within {
+    border-color: #42855c;
+    box-shadow: 0 0 0 3px rgba(66, 133, 92, 0.10);
+}
+
+.ew-input-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: #263c30;
+    font-size: 14px;
+}
+
+.ew-password-toggle {
+    border: none;
+    background: transparent;
+    color: #75847a;
+    cursor: pointer;
+    display: flex;
+}
+
+.ew-login-submit {
+    margin-top: 17px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #245b3b;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+}
+
+.ew-login-submit:hover {
+    background: #173e2b;
+    transform: translateY(-1px);
+}
+
+.ew-register-text {
+    text-align: center;
+    font-size: 13px;
+    color: #718075;
+    margin-top: 25px;
+}
+
+.ew-register-text a {
+    color: #286943;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ew-admin-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: #718075;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+    .ew-login-page {
+        grid-template-columns: 1fr;
+    }
+
+    .ew-login-left {
+        min-height: 330px;
+        padding: 28px;
+    }
+
+    .ew-login-message {
+        padding: 40px 0;
+    }
+
+    .ew-login-message h1 {
+        font-size: 38px;
+    }
+
+    .ew-login-bottom {
+        font-size: 11px;
+    }
+
+    .ew-login-right {
+        min-height: 570px;
+        padding: 25px;
+    }
+}
